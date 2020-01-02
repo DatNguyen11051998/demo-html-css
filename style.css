@@ -113,7 +113,9 @@ nav ul li a {
 #content h2 {
 	margin: 20px 0 20px 10px;
 }
-
+#content #banner img {
+	width: 890px;
+}
 .product {
 	margin-right: 20px;
 	margin-bottom: 20px;
@@ -174,28 +176,53 @@ footer p {
 	text-align: center;
 	padding: 15px 0;
 }
-@media screen and (max-width: 768px ) {
-	#cart {
-		float: right;
+@media screen and ( min-width:768px ) and (max-width:1024px) {
+	
+	div .product-items {
+		width: 225px;
 	}
-	#menu {
-		display: block;
-	}
-	nav {
-		display: none;
+	#content #banner img {
+		width: 100%;
 	}
 	#to {
-		
-		padding: 0 ;
+		padding: 0 10%;
 	}
-	#product {
-		display: flex;
-	}
-	.product-items {
-		width: 200px;
-	}
-	#aside {
+	aside {
 		display: none;
 	}
 	
+}
+
+ @media screen and (min-width: 480px) and (max-width:768px){
+	 #content #banner img {
+		 width: 100% !important;
+	 }
+	 nav {
+		display: none;
+	}
+	 #menu {
+		display: block;
+		 margin: 0 20px;
+	 }
+	#to {
+		padding: 0 20px;
+		display: inline-block;
+	 }
+	 div .product-items {
+		 width: 180px;
+	 }
+	 .product-items button {
+		 margin-top: 5px;
+	 }
+	 header img {
+		 margin-left: -60px;
+	 }
+	 aside {
+		 display: none;
+	 }
+ }
+ @media screen and (max-width:480px){
+	div .product-items {
+		display: inline;
+	}
  }
